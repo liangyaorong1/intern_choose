@@ -14,7 +14,7 @@ public interface StudentService {
      * @param password 密码，不能为空
      * @return null表示登录失败
      */
-    boolean login(String username, String password);  
+    boolean login(String username, String password);
 
     
 }
