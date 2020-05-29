@@ -4,5 +4,12 @@
 <mapper namespace="com.lcvc.intern_choose.dao.StudentDao">
     <!--==================================基本查询============================-->
 
+    <select id="get" resultType="Student">
+        select * from student where studentNumber=#{studentNumber}
+    </select>
+
+    <select id="login"  resultType="Integer">
+        select count(1) from student where studentNumber=#{studentNumber} and password=#{password}
+    </select>
 
 </mapper>
