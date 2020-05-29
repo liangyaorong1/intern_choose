@@ -4,7 +4,7 @@ public class Teacher {
     private String teacherNumber;
     private String name;
     private String password;
-    private Integer professionalId;
+    private Integer professioanlId;
 
     public String getTeacherNumber() {
         return teacherNumber;
@@ -30,11 +30,11 @@ public class Teacher {
         this.password = password;
     }
 
-    public Integer getProfessionalId() {
-        return professionalId;
+    public Integer getProfessioanlId() {
+        return professioanlId;
     }
 
-    public void setProfessionalId(Integer professionalId) {
-        this.professionalId = professionalId;
+    public void setProfessioanlId(Integer professioanlId) {
+        this.professioanlId = professioanlId;
     }
 }

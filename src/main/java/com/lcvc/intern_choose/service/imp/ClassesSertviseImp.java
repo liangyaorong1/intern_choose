@@ -2,7 +2,6 @@ package com.lcvc.intern_choose.service.imp;
 
 import com.lcvc.intern_choose.dao.ClassesDao;
 import com.lcvc.intern_choose.model.Classes;
-import com.lcvc.intern_choose.model.exception.MyServiceException;
 import com.lcvc.intern_choose.service.ClassesServise;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,7 +27,7 @@ public class ClassesSertviseImp implements ClassesServise {
     }
 
     @Override
-    public Boolean delete(Integer id) {
+    public Boolean delete(@NotNull Integer id) {
         int k = classesDao.delete(id);
         return k > 0 ? true : false;
     }
